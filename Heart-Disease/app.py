@@ -1,10 +1,13 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os 
 # Load saved model, scaler, and expected columns
-joblib.load("Heart-Disease\Knn_Heart.pkl")
-scaler = joblib.load("Heart-Disease\scaler.pkl")
-expected_columns = joblib.load("Heart-Disease\columns.pkl")
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, "Knn_Heart.pkl"))
+scaler = joblib.load(BASE_DIR,"scaler.pkl")
+expected_columns = joblib.load(BASE_DIR,"columns.pkl")
 
 st.title("Heart Stroke Prediction by Ashish Rajput")
 st.markdown("Provide the following details to check your heart stroke risk:")

@@ -1,4 +1,5 @@
 ❤️ Heart Disease Prediction System
+<img width="764" height="824" alt="Screenshot 2025-12-13 084852" src="https://github.com/user-attachments/assets/d3ce1ae4-bd9f-4368-aa39-ad0a8cc8ac4d" />
 
 This project is a Machine Learning-based Heart Disease Prediction System that predicts the likelihood of heart disease using patient medical data. It helps in early detection and supports better healthcare decisions.
 
